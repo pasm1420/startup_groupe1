@@ -1,0 +1,154 @@
+*{
+
+}
+:root{
+    --blue: #06a3da;
+    --grey: #686462;
+    --white: #ffffff;
+    --bluewhite: #eef9ff;
+    --darkblue: #091e3e;
+}
+.gridpricecontainer1{
+    display: grid;
+    grid-template-columns: repeat(3,90%);
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 15%;
+
+   
+} 
+
+
+.gridbasicplan1{
+    background-color: var(--bluewhite);
+    width: 100%;
+    padding-left: 5%;
+    box-shadow: 2px 5px 5px var(--white);
+    border-radius: 5px;
+    /* height: 30%; */
+    /* border: 1px solid green; */
+}
+.gridbasicplan2{
+    background-color: var(--white);
+    width: 100%;
+    padding-left: 5%;
+    box-shadow: 2px 5px 5px var(--bluewhite);
+    border-radius: 5px;
+}
+
+.priceplan h4{
+   text-align: center;
+   color: var(--blue)
+}
+.priceplan h2{
+    text-align: center;
+    /* border: 3px solid green; */
+
+}
+.priceplan .plan{
+    width: 10%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--blue);
+}
+
+.first .basic{
+    font-weight: bold;
+    color: var(--blue);
+}
+.first h6{
+    color: var(--grey);
+}
+.first hr{
+ 
+}
+.second{
+    display: flex;
+}
+.second p{
+    font-weight: bold;
+    font-size: 40px;
+}
+.second span{
+    font-size: 20px;
+    color: var(--grey);
+    /* margin-left: %; */
+    margin-top: 17%;
+}
+.third{
+    color: var(--grey);
+    
+}
+/* .third h5{
+    display: flex;
+    align-items: center;
+} */
+.third i{
+    margin-left: 40%;
+}
+button{
+    width: 30%;
+    height: 30px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    margin-bottom: 5%;
+}
+.gridcontainer2{
+    display: grid;
+    grid-template-columns: repeat(2,90%);
+    margin: 2% 20%
+}
+.gridleft{
+    width: 70%;
+    border: 1px solid green;
+    margin-left: -10%;
+}
+.contact1 p{
+ display: inline-block;  
+ margin: 1%;
+
+}
+.gridcontact{
+   margin-left: 3%;
+}
+.gridright{
+    width: 50%;
+    border: 1px solid green;
+    margin-left: -30%;
+    background-color: var(--blue)
+
+}.contact2{
+    
+}
+.inputgroup{
+    margin-top: 3%;
+    margin-left: 20%;
+    /* align-items: center; */
+    width: 60%;
+}
+.inputgroup input{
+   width: 95%;
+   height: 40px;
+   background-color: var(--bluewhite);
+   color: var(--darkblue);
+   border: none;
+   margin-top: 4%;
+}
+.gridright button{
+    margin-left: 20%;
+    width: 59%;
+    /* margin-bottom: -5%; */
+    background-color: var(--darkblue);
+    color: var(--white);
+    margin-top: 1%;
+
+}
+.inputgroup textarea{
+    width: 96%;
+    height: 70px;
+    margin-top: 4%;
+    background-color: var(--bluewhite);
+   color: var(--darkblue);
+}
