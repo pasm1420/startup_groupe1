@@ -3,13 +3,18 @@
     --bleuclair : #06A3DA ;
     --blanc  : white ; 
     --bleuPlusClair : #EEF9FF;
+    --gris:#ADB1C0;
 }
+/* *{
+    border: 1px solid red;
+} */
 body{
     margin: 0;
     display: grid;
-    grid-template-rows: 2fr 3fr ;
+    grid-template-rows: auto auto ;
     font-family: Verdana;
     font-size: 14px;
+    padding: 0;
  }
 
 
@@ -17,9 +22,10 @@ body{
 header{
     background: linear-gradient(0deg, #04061bb0, #04061bb0), url("./images/carousel-1.jpg");
     background-size: cover;
-    background-color: #091E3E;
+    background-repeat: no-repeat;
     margin: 0;
-    /* height: 100vh; */
+    width: 100%;
+    /* height: 130vh; */
 
 
 }
@@ -114,7 +120,6 @@ header .menu .menuItems ul li a i{
     color: var(--bleuclair);
 }
 header .menu .menuItems ul li button{
-
     background-color: var(--bleuclair);
     padding: 10px 20px;
     color: white;
@@ -135,6 +140,7 @@ align-items: center;
 display: flex;
 flex-direction: column;
 
+font-size: 30px;
 }
 header .texte p , header .texte h1{
     color: var(--blanc);
@@ -161,6 +167,9 @@ header .texte .buttons button:nth-child(2){
 
 }
 /* ---------------------------DESIGN DU MAIN----------------------------- */
+section{
+    margin-top: 30px;
+}
 main .cards{
     display: flex;
     justify-content: center;
@@ -168,7 +177,7 @@ main .cards{
     top: -35px;
     
 }
-main .cards .card{
+main .cards .card {
     display: flex;
     align-items: center;
     background-color: var(--bleuclair);
@@ -222,11 +231,17 @@ main .cards .card:nth-child(2) .body-card p:nth-child(2){
 }
 
 /* section 2 */
-#section2 h3, #section3 h3 ,#section4 h3{
+#section2 h3, #section3 h3 ,#section4 h3 , #section5 h3 ,#section6 h3{
     text-align: center;
     line-height: 30px;
 }
 
+#blue-texte{
+    text-align: center;
+    color: var(--bleuclair);
+    margin-bottom: -15px;
+    font-weight: bold;
+}
 
 /* #section2 #hrs{
     display: flex;
@@ -264,7 +279,7 @@ main .cards-section2 .line .card , main .clients .client{
     text-align: center;
     
 }
-main .cards-section2 .line , main .clients  {
+main .cards-section2 .line , .blogs {
     color: black;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -305,7 +320,7 @@ main .cards-section2 .line .card .body-card p{
 }
 
 /* section 3 prices */
-main #section3 .prices {
+main #section3 .prices , main .clients  {
     color: black;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -317,7 +332,7 @@ main #section3 .prices {
 
 }
 
-main #section3 .prices .price{
+main #section3 .prices .price {
     background-color: var(--bleuPlusClair);
     padding: 20px 30px;
     justify-content: start;    
@@ -354,7 +369,7 @@ main #section3 .prices .price .pricing-body .pricing-body-line{
 main #section3 .prices .price .pricing-body .pricing-body-line .fa-check{
     color: var(--bleuclair);
 }
-main #section3 .prices .price .pricing-body .pricing-body-line .bi-x-lg{
+main #section3 .prices .price .pricing-body .pricing-body-line .fa-xmark{
     color: red;
 }
 main #section3 .prices .price #buttons button{
@@ -364,7 +379,7 @@ main #section3 .prices .price #buttons button{
     color: white;
 
 }
-main #section3 .prices .price:nth-child(2){
+main #section3 .prices .price:nth-child(2) , main .clients .client:nth-child(2) {
     padding: 20px 30px;
     justify-content: start;    
     box-shadow: 5px 5px 7px #cccccc91;
@@ -380,6 +395,144 @@ main #section3 .prices .price:nth-child(2){
 }
 #section4 .clients .client .client-header{
     display: flex;
-        
+    
+}
+#section4 .clients .client .client-header .client-name{
+    margin-left: 20px;
+    
+}
+#section4 .clients .client .client-header .client-name p:nth-child(1) , .portfolios .ligne .portfolio .portfolio-title{
+    font-size: 15px;
+    margin-top: 0;
+    color: var(--bleuclair);   
+}
+#section4 .clients .client .client-header .client-name p:nth-child(2) , .portfolios .ligne .portfolio .portfolio-body{
+    color: var(--gris);   
+    text-align: start;
+    margin-top: -10px;
+    font-size: 12px;
+    
+}
+#section4   .clients .client .client-body p{
+    color: var(--gris);   
+    text-align: start;
+    font-size: 10px;
+    line-height: 15px;
+    
+}
+
+/* --------------section 5---------------- */
+.portfolios {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.portfolios .ligne{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    z-index: 1;
+    margin-bottom: 17px;
 
 }
+
+.portfolios .ligne .portfolio{
+    background-color: var(--bleuPlusClair);
+    border-radius: 5px;
+    box-shadow: 7px 7px 2px var(--gris-clair);
+    margin-right: 150px;
+    width: 93%;
+}
+.portfolios .ligne .portfolio .portfolio-title , .portfolios .ligne .portfolio .portfolio-body {
+    text-align: center;
+}
+.portfolios .ligne .portfolio .portfolio-image {
+    width: 100%;
+}
+.portfolios .ligne .portfolio .portfolio-image img{
+    width: 100%;
+}
+
+/* -----------------SECTION 6--------------------- */
+
+.blogs .blog .blog-body {
+    background-color: var(--bleuPlusClair);
+    padding: 10px 30px;
+    justify-content: start;
+
+}
+
+.blogs .blog  .image-blog{
+   height: 30vh;
+   background-size: cover;
+}
+.blogs .blog  #blog1{
+    background-image: url("images/blog-1.jpg");
+
+}
+.blogs .blog  #blog2{
+    background-image: url("images/blog-2.jpg");
+
+}
+.blogs .blog  #blog3{
+    background-image: url("images/blog-3.jpg");
+
+}
+
+.blogs .blog .blog-body .blog-title{
+    color: var(--bleuDeNuit); 
+    font-size: 17px;
+    margin-top: -10px;
+}
+.blogs .blog .blog-body .blog-infos i , .blogs .blog .blog-body .read-more{
+    color: var(--bleuclair); 
+
+}
+.blogs .blog .blog-body .blog-infos span{
+    color: var(--gris); 
+}
+
+.blogs .blog .blog-body .blog-texte{
+    color: var(--gris); 
+    font-size: 12px;
+    margin-top: -10px;
+
+}
+#web-design{
+    background-color: var(--bleuclair);
+    padding: 10px 13px ;
+    width: 30%;
+    position: relative;
+    top: 30px;
+}
+/* RESPONSIVITE */
+
+@media screen and (width <= 768px) {
+    body{
+        margin: 0;
+    }
+    main .cards , main #section3 .prices , main .clients ,main .cards-section2 .line ,.blogs  {
+        display: grid;
+        grid-template-columns: 30%;
+        width: auto;
+    }
+    .portfolios .ligne{
+        grid-template-columns: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+    main .cards .card , main .cards-section2 .line .card , .portfolios .ligne .portfolio{
+        margin-bottom: 10px;
+        
+    }
+    main #section3 .prices .price{
+        width: 200px;
+    }
+    
+    
+}
+

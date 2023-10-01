@@ -1,0 +1,23 @@
+header{
+    height: 70vh;
+}
+#cercle{
+    border: 1px solid var(--blanc);
+    border-radius: 50%;
+    padding: 0 2px;
+}
+header .texte{
+    margin: 5% auto;
+    width: 80%;
+
+}
+header .texte p {
+   font-size: 15px;
+   font-weight: lighter;
+   color: var(--gris);
+
+}
+header .texte h1 {
+   margin: 0;
+
+}
