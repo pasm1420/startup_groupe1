@@ -1,0 +1,368 @@
+:root{
+    --bleuDeNuit : #091E3E ;
+    --bleuclair : #06A3DA ;
+    --blanc  : white ; 
+    --bleuPlusClair : #EEF9FF;
+    --color: #f2fbff;
+    --colo:#06A3DA;
+} 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* -------------------------------HEADER------------------------------------------------------------ */
+ header{
+    background: linear-gradient(0deg, #04061bb0, #04061bb0), url("image/w.PNG");
+    background-size: cover;
+    height: 50vh;
+
+
+}
+/* -------------------------------DESIGN DE LA BANIERE--------------------------------- */
+header .banner{
+    background-color: var(--bleuDeNuit);
+    color:var(--blanc) ;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner .bannerLeft{
+    display: flex;
+    float: left;
+    margin: 10px 40px 0 40px;
+
+}
+header .banner .bannerLeft .infos{
+    font-size: 10px;
+    margin: 10px;
+}
+header .banner .bannerRight{
+    display: flex;
+    margin: 0px 40px ;
+}
+header .banner .bannerRight ul{
+    display: flex;
+    float: left;
+}
+header .banner .bannerRight ul li{
+   list-style: none;
+   margin-left: 10px;
+   border-radius: 50%;
+   padding: 5px 7px;
+   border: 1px solid var(--blanc);
+}
+header .banner .bannerRight ul li a{
+   color: var(--blanc);
+}
+/* ---------------------------DESIGN DU MENU ET LOGO----------------------------- */
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--blanc);
+}
+.fa-user-tie{
+    margin-right: 10px;
+    font-size: 27px;
+   
+    
+}
+header .menu .logo span{
+    font-size: 23px;
+    font-weight: bold;
+}
+header .menu .logo , header .menu .menuItems {
+    margin: 10px 40px 10px 40px ;
+    color: var(--blanc);
+
+}
+header .menu .menuItems ul  {
+    margin: 10px 40px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+
+}
+header .menu .menuItems ul li{
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    color: var(--blanc);
+
+
+    
+}
+header .menu .menuItems ul li a {
+    color: var(--blanc);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 100;
+
+}
+header .menu .menuItems ul li a i{
+    color: var(--orange);
+    margin-left: 10px;
+
+}
+
+.fa-magnifying-glass{
+    color: var(--bleuclair);
+}
+header .menu .menuItems ul li button{
+
+    background-color: var(--bleuclair);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    margin-top: -10px;
+}
+/* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
+header .texte{
+margin: 5% auto;
+width: 80%;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+}
+header .texte p , header .texte h1{
+    color: var(--blanc);
+    text-align: center;
+
+}
+header .texte .buttons button{
+    color: var(--blanc);
+    padding: 10px 20px;
+    margin: 0 10px;
+    
+}
+header .texte .buttons button:nth-child(1){
+    border: none;
+    background-color: var(--bleuclair);
+
+
+}
+header .texte .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid var(--blanc);
+}
+/* contact */
+.contact{
+    margin-top: 5%;
+}
+.contact hr{
+    width: 5%;
+    margin-left: 40%;
+}
+.contact h4{
+    text-align: center;
+    color: var(--bleuclair);
+}
+.contact h1{
+    text-align: center;
+}
+.donnees{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+.donnees i{
+    margin-top: -100%;
+  
+}
+.donnees .spa{
+    margin-top: 1%;
+    margin-left: -18%;
+    width: 15%;
+    height: 10%;
+}
+.donnees .num{
+    color: var(--bleuclair);
+    width: 10%;
+    margin-top: 3%;
+    margin-left: -33%;
+    height: 1%;
+    font-size: 12px;
+}
+.cards{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}
+.formulaire{
+    width: 40%;
+    box-sizing: border-box;
+    margin-top: -1.5%;
+  
+}
+.formulaire input{
+    width: 45%;
+    margin-left: 2%;  
+    background-color: var(--color);
+    border: none;
+    padding: 10px;
+}
+ textarea{
+    margin-left: 2%;
+    width: 92%;
+    background-color: var(--color);
+    border: none;
+}
+.formulaire button{
+    background-color:var(--colo);
+    width: 92%;
+    margin-left: 2%;
+    border: none;
+    padding: 5px;  
+    color: white;  
+}
+.direction{
+    background-color: var(--colo);
+    height: 1%;
+    margin-top: 23%;
+    margin-left: 5%;
+    font-size: 12px;
+    padding: 5px;
+}
+.boutique{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+}
+.boutique img{
+    width: 90%;
+    margin: 1%;
+}
+footer{
+    border: 1px solid #000;
+    background-color: var(--bleuDeNuit);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+
+}
+.Startup{
+    border: 1px solid #000;
+    background-color: var(--bleuclair);
+    width: 20%;
+    padding-bottom: 25px;
+}
+.Startup h1{
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+.Startup p{
+    color: white;
+    width: 90%;
+    margin: 5%;
+    text-align: justify;
+    font-size: 13px;
+}
+.mail{
+    display: flex;
+    margin-top:-7%;
+
+}
+.Startup input{
+    margin-left:5%;
+    border: 1px solid #000;
+    height: 30%;
+    padding-top: 4%;
+    margin-top: 4%;
+}
+.Startup button{
+    margin-left: 0%;
+    border: 1px solid #000;
+    padding-top: 5px;
+    margin-top: 4%;
+    padding-right: 9px;
+    padding-left: 3px;
+    padding-bottom: 5px;
+    background-color: var(--bleuDeNuit);
+    color: white;
+    
+}
+.touch{
+    width: 15%;
+    margin-left: -10%;
+    margin-top: 1%;
+}
+.touch h2{
+    color: white;
+}
+.touch p{
+    color: white;
+    font-size: 12px;
+    margin-top: 3%;
+}
+.icone{
+    display: flex;
+    margin-top: 5%;
+    height: 8%;
+}
+.tw,.face,.lin,.ins{
+    margin-left: 2%;
+    background-color: white;
+}
+.quick{
+    margin-top: 5%;
+    margin-left: -50%;
+    width: 100%;
+}
+.quick i{
+    font-size: 10px; 
+}
+.quick h2{
+    color: white;
+}
+.quick li {
+    list-style: none;
+}
+.quick a{
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+
+}
+.pop{
+    /* border: 1px solid #000; */
+    margin-top: 0%;
+    margin-left: -20%;
+    padding-left: 50px;
+}
+.pop i{
+    font-size: 10px;
+}
+.pop h2{
+    color: white;
+    margin-top: 5%;
+    
+}
+.pop li {
+    list-style: none;
+}
+.pop a{
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+}
+.pein{
+    background-color:rgb(3, 3, 29) ;
+    margin-top: -3%;
+    padding: 14px;
+}
+.pein p{
+    text-align:right;
+    margin-right: 20%;
+    font-size: 13px;
+    color: white;
+}
