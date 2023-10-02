@@ -1,0 +1,429 @@
+:root{
+    color: #06A3D4; color:#000942;
+
+}
+:root {
+    --bleuDeNuit: #091E3E;
+    --bleuclair: #06A3DA;
+    --blanc: white;
+    --bleuPlusClair: #EEF9FF;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+/* -------------------------------HEADER------------------------------------------------------------ */
+header {
+    background: linear-gradient(0deg, #04061bb0, #04061bb0), url("./images/carousel-1.jpg");
+    background-size: cover;
+    height: 50vh;
+
+
+}
+
+/* -------------------------------DESIGN DE LA BANIERE--------------------------------- */
+header .banner {
+    background-color: var(--bleuDeNuit);
+    color: var(--blanc);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner .bannerLeft {
+    display: flex;
+    float: left;
+    margin: 10px 40px 0 40px;
+
+}
+
+header .banner .bannerLeft .infos {
+    font-size: 10px;
+    margin: 10px;
+}
+
+header .banner .bannerRight {
+    display: flex;
+    margin: 0px 40px;
+}
+
+header .banner .bannerRight ul {
+    display: flex;
+    float: left;
+}
+
+header .banner .bannerRight ul li {
+    list-style: none;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 5px 7px;
+    border: 1px solid var(--blanc);
+
+}
+
+header .banner .bannerRight ul li a {
+    color: var(--blanc);
+}
+
+/* ---------------------------DESIGN DU MENU ET LOGO----------------------------- */
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--blanc);
+}
+
+.fa-user-tie {
+    margin-right: 10px;
+    font-size: 27px;
+
+}
+
+header .menu .logo span {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+header .menu .logo,
+header .menu .menuItems {
+    margin: 10px 40px 10px 40px;
+    color: var(--blanc);
+
+}
+
+header .menu .menuItems ul {
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+
+}
+
+header .menu .menuItems ul li {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    color: var(--blanc);
+
+
+
+}
+
+header .menu .menuItems ul li a {
+    color: var(--blanc);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 100;
+
+}
+
+header .menu .menuItems ul li a i {
+    color: var(--orange);
+    margin-left: 10px;
+
+}
+
+.fa-magnifying-glass {
+    color: var(--bleuclair);
+}
+
+header .menu .menuItems ul li button {
+
+    background-color: var(--bleuclair);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    margin-top: -10px;
+}
+
+/* header .menu .menuItems ul li .active{
+    color: var(--bleuclair);
+    position: relative;
+    border-bottom: 1px solid var(--bleuclair);
+} */
+/* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
+header .texte {
+    /* margin: 10% auto;
+    width: 80%; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .texte p,
+header .texte h1 {
+    color: var(--blanc);
+    text-align: center;
+
+}
+
+header .texte .buttons button {
+    color: var(--blanc);
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-left: 500px;
+   
+
+}
+
+header .texte .buttons button:nth-child(1) {
+    color: black;
+    border: none;
+    background-color: var(--blanc);
+    text-align: left;
+    width: 150px;
+    
+
+
+
+}
+
+header .texte .buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--blanc);
+
+
+
+}
+/* --Debut_our_service */
+.service{
+    display: grid;
+    align-items: center;
+        grid: repeat;
+        overflow: hidden;
+        gap: 20px;
+        padding: 0 8% 30px 8%;
+        box-sizing: border-box;
+        justify-content: center;
+        margin: auto;
+ }
+ .text1{
+    justify-content: center;
+    text-align: center;
+ }
+ .gauche{
+    width: 40px;
+    margin-left: 630px;
+    color: #06A3D4;
+ }
+ .first{
+    color: #06A3D4;
+ }
+ .droite{
+    width: 10px;
+    margin-right:650px ;
+    color: #06A3D4;
+ }
+   
+.premier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: repeat;
+    overflow: hidden;
+    justify-self: center;
+    gap: 20px;
+    padding: 0 8% 30px 8%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+   
+
+.second{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: repeat;
+    overflow: hidden;
+    gap: 20px;
+    padding: 0 8% 30px 8%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: -50px;
+}
+.box{
+    background-color: #EEF9FF;
+    text-align: center;
+    justify-content: center;
+}
+.boxZ{
+    background-color: #06A3D4;
+    text-align: center;
+    justify-content: center;
+}
+.icon{
+    background-color: #06A3D4;
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+   align-items: center;
+   text-align: center;
+   margin-left: 45%;
+   margin-top: 20px;
+
+}
+/* ---Fin_our_service */
+.testi{
+display: grid;
+align-items: center;
+ /* grid: repeat; */
+    /* overflow: hidden; */
+   /* gap: 20px; */
+   /* padding: 0 8% 30px 8%; */
+box-sizing: border-box;
+justify-content: center;
+    /* margin: auto; */
+}
+.premier2{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid: repeat;
+ overflow: hidden;
+justify-self: center;
+ /* gap: 20px; */
+  padding: 0 8% 30px 8%; 
+   box-sizing: border-box;
+justify-content: center;
+   }
+    .box2{
+    background-color: #EEF9FF;
+    text-align: center;
+   justify-content: center;
+ gap: none;
+   }
+   .tof1{
+    background-color: gray;
+    text-align: left;
+    /* display: flex; */
+   }
+   .tof2{
+    background-color: white;
+    text-align: left;
+    box-shadow: gray 2px 2px;
+    /* height: 162px; ; */
+    transform: scale(200px);
+    }
+   .tof3{
+    background-color: gray;
+    text-align: left;
+   }
+   .log img {
+    margin-left: 95px;
+    width: 90%; 
+    height: 80px;
+   }
+   img{
+    width: 40px;
+    height: 40px;
+   }
+    .droite{
+    /* display: flex; */
+    grid-template-columns: repeat(2);
+    grid: repeat;
+    /* margin-left: -50px; */
+    width: 60%;
+    justify-content: space-between;
+    /* gap: 50px; */
+   }
+   .textpropos{
+    text-align: center;
+    color: black;
+   }
+   .about{
+    /* :grid-template-columns: repeat(2,1fr); */
+    /* grid: repeat; */
+    /* text-align: justify; */
+    justify-content: center;
+    width: 70%;
+    margin-left: 200px;
+   }
+   .rang1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 300px;
+    color: black;
+   }
+   .rang2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 320px;
+    color: black;
+   }
+   .gauche img{
+    width: 400px;
+    height: 100%;
+    margin-top: -400px;
+    margin-left: 200px;
+   }
+   button{
+    background-color: #06A3D4;
+    border: none;
+    width: 130px;
+    height: 30px;
+   }
+   .num{
+    margin-left: 30px;
+   }
+   .person{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: repeat;
+    align-items: center;
+    /* overflow: hidden; */
+    gap: 0px;
+    text-align: center;
+    color: #06A3D4;
+    size: 24px;
+    
+   }
+   .person img{
+    width: 80%;
+    height: 100%;
+    
+   }
+   .text-team{
+    text-align: center;
+   }
+   .text-team p{
+    color: #06A3D4;
+    size: bold;
+   /* }
+   .ft1{
+    color: white;
+    background-color: #06A3D4;
+    margin-left: 50px;
+    width: 20%;
+    justify-content: center;
+   }
+   .Email{
+    color: gainsboro;
+    background-color: #EEF9FF;
+    margin-left: 10px;
+    border: none;
+   }
+   .Signup{
+    color: white;
+    background-color: #000942;
+    border: none;
+   }
+   .get{
+    background-color: #000942;
+    color: white;
+    width: 100%;
+    height: 100%;
+   }
+   .rs{
+    display: flex;
+    gap: 10px; */
+    /* justify-content: space-between; */
+    /* background-color: #06A3D4; */
+   }
+   /* .FOOTER{
+    display: flex;
+    gap: 15px;
+   }
+       */

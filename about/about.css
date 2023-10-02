@@ -1,0 +1,199 @@
+header{
+    height: 70vh;
+}
+#cercle{
+    border: 1px solid var(--blanc);
+    border-radius: 50%;
+    padding: 0 2px;
+}
+header .texte{
+    margin: 5% auto;
+    width: 80%;
+
+}
+header .texte p {
+   font-size: 15px;
+   font-weight: lighter;
+   color: var(--gris);
+
+}
+header .texte h1 {
+   margin: 0;
+
+}
+/* about */
+#aboutUS .about  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 70px auto;
+    width: 80%;
+    
+}
+/* soulignement */
+#hrs1{
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+}
+#hrs1 hr{
+    height: 2px;
+    display: inline-block;
+    border: none;
+    background-color: var(--bleuclair);
+    text-align: center;
+}
+#hrs1 hr:nth-child(1){
+    width: 1%;
+    margin: 0;
+
+}
+#hrs1 hr:nth-child(2){
+    width: 15%;
+    margin: 0;
+}
+
+#aboutUS .about .texte{
+    width: 60%;
+}
+#aboutUS .about .texte h5 , #aboutUS .about .texte .checks i{
+    color: var(--bleuclair);
+}
+#aboutUS .about .texte .little-texte{
+    color: var(--gris);
+    font-size: 12px;
+    line-height: 20px;
+}
+#aboutUS .about .texte .checks{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;   
+}
+#aboutUS .about .texte .phone {
+    display: flex;
+}
+#aboutUS .about .texte .phone .fa-phone {
+    padding: 10px 15px;
+    background-color: var(--bleuclair);
+    margin-right: 15px;
+    color: var(--blanc);
+}
+#aboutUS .about .texte .phone div p:nth-child(2){
+    color: var(--bleuclair);
+    margin: 6px 0 0 0;
+}
+#aboutUS .about .texte .phone div p:nth-child(1){
+    margin-bottom: 0;
+}
+#aboutUS .about .texte .btn-resquest button{
+    padding: 10px 20px;
+    background-color: var(--bleuclair);
+    border: none;
+    color: var(--blanc);
+    margin-top: 20px;
+}
+#aboutUS .about .image-about{
+    width: 40%;
+}
+#aboutUS .about .image-about img{
+    width: 80%;
+    margin-left: 50px;
+    height: 69vh;
+
+}
+.client{
+    animation: votre_animation 5s linear infinite alternate;
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client img{
+    width:70px;
+}
+.client div{
+    width:20%;
+}
+/* .mySlides{
+    width: 10%;
+
+} */
+/* @keyframes votre_animation {
+
+    to {
+        transform: translatex(100%)
+    }
+
+} */
+
+footer{
+    background-color: var(--bleuDeNuit);
+}
+.containerfooter{
+    display: grid;
+    grid-template-columns: 35% auto auto auto;
+    gap: 5%;
+}
+.copyrigth {
+    background-color: black;
+    color: var(--blanc) ;
+    padding: 0.2%;
+    text-align: center;
+
+}
+.textfooter{
+    background-color: var(--bleuclair);
+    text-align: center;
+    padding: 10px;
+    margin-left: 15%;
+}
+.textfooter p{
+    color: var(--blanc);
+}
+.textfooter span{
+    color: var(--blanc);
+    font-size: large;
+}
+#signUp{
+    background-color: #091E3E;
+    color: var(--blanc);
+}
+.mail-container{
+        display: flex;
+
+}
+.mail-container button {
+    background: var(--bleuclair);
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+#email{
+    width: 200px;
+    padding: 10px;
+    border: 3px solid var(--bleuDeNuit);
+
+}
+.GetInTouch,.quickLink,.popularLink{
+    color: var(--blanc);
+    
+}
+.quickLink ul li a, .popularLink ul li a{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.quickLink ul li ,
+.popularLink ul li  {
+    list-style: none
+
+}
+.quickLink h4,.popularLink h4{
+    margin-left: 15%;
+}
+.sociaux a{
+ margin-right: 15px;
+ background-color:var(--bleuclair);
+ padding: 7px;
+}

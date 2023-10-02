@@ -1,0 +1,381 @@
+*{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --blue: #06a3da;
+    --grey: #686462;
+    --white: #ffffff;
+    --bluewhite: #eef9ff;
+    --darkblue: #091e3e;
+}
+
+/* body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: 2fr 3fr ;
+    font-family: Verdana;
+    font-size: 14px;
+ } */
+
+ /* -------------------------------HEADER------------------------------------------------------------ */
+header{
+    background-image: url("../image/fondbg.png");
+    background-size: cover;
+    height: 70vh;
+
+
+}
+/* -------------------------------DESIGN DE LA BANIERE--------------------------------- */
+header .banner{
+    background-color: var(--darkblue);
+    color:var(--white) ;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner .bannerLeft{
+    display: flex;
+    float: left;
+    margin: 10px 40px 0 40px;
+
+}
+header .banner .bannerLeft .infos{
+    font-size: 10px;
+    margin: 10px;
+}
+header .banner .bannerRight{
+    display: flex;
+    margin: 0px 40px ;
+}
+header .banner .bannerRight ul{
+    display: flex;
+    float: left;
+}
+header .banner .bannerRight ul li{
+   list-style: none;
+   margin-left: 10px;
+   border-radius: 50%;
+   padding: 5px 7px;
+   border: 1px solid var(--white);
+
+}
+header .banner .bannerRight ul li a{
+   color: var(--white);
+}
+/* ---------------------------DESIGN DU MENU ET LOGO----------------------------- */
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+}
+.fa-user-tie{
+    margin-right: 10px;
+    font-size: 27px;
+    
+}
+header .menu .logo span{
+    font-size: 23px;
+    font-weight: bold;
+}
+header .menu .logo , header .menu .menuItems {
+    margin: 10px 40px 10px 40px ;
+    color: var(--white);
+
+}
+header .menu .menuItems ul  {
+    margin: 10px 40px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+
+}
+header .menu .menuItems ul li{
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    color: var(--white);
+
+
+    
+}
+header .menu .menuItems ul li a {
+    color: var(--white);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 100;
+
+}
+header .menu .menuItems ul li a i{
+    color: var(--orange);
+    margin-left: 10px;
+
+}
+
+.fa-magnifying-glass{
+    color: var(--blue);
+}
+header .menu .menuItems ul li button{
+    background-color: var(--blue);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    margin-top: -10px;
+    width: 200px;
+    height: 40px;
+}
+/* header .menu .menuItems ul li .active{
+    color: var(--blue);
+    position: relative;
+    font-weight: bold;
+    border-bottom: 1px solid var(--blue);
+    
+
+} */
+/* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
+header .texte{
+margin: 10% auto;
+width: 80%;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+}
+header .texte p , header .texte h1{
+    color: var(--white);
+    text-align: center;
+
+}
+/* header .texte .buttons button{
+    color: var(--white);
+    padding: 10px 20px;
+    margin: 0 10px;
+    
+}
+header .texte .buttons button:nth-child(1){
+    border: none;
+    background-color: var(--blue);
+
+
+}
+header .texte .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid var(--white);
+
+
+
+} */
+.gridpricecontainer1{
+    display: grid;
+    grid-template-columns: repeat(4,90%);
+    width: 30%;
+    margin-left: 10%;
+    /* border: 1px solid green; */
+} 
+
+
+.gridbasicplan1{
+    background-color: var(--bluewhite);
+    width: 100%;
+    /* padding-left: 5%; */
+    box-shadow: 2px 5px 5px var(--white);
+    border-radius: 5px;
+    /* height: 30%; */
+    /* border: 1px solid green; */
+    
+}
+.gridbasicplan2{
+    background-color: var(--white);
+    width: 100%;
+    /* padding-left: 5%; */
+    box-shadow: 5px 10px 5px var(--bluewhite);
+    border-radius: 5px;
+    
+}
+.priceplan{
+    margin: 5% 0;
+    /* border: 1px solid green; */
+    height: 20%;
+}
+.priceplan h4{
+   text-align: center;
+   color: var(--blue)
+}
+.priceplan h2{
+    text-align: center;
+    /* border: 3px solid green; */
+
+}
+.priceplan .plan{
+    width: 10%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--blue);
+}
+.first{
+    padding-left: 8%;
+}
+
+.first .basic{
+    font-weight: bold;
+    color: var(--blue);
+}
+.first h6{
+    color: var(--grey);
+    
+}
+.first hr{
+ 
+}
+.second{
+    display: flex;
+    padding-left: 8%;
+}
+.second p{
+    font-weight: bold;
+    font-size: 40px;
+}
+.second span{
+    font-size: 20px;
+    color: var(--grey);
+    /* margin-left: %; */
+    margin-top: 17%;
+}
+.third{
+    color: var(--grey);
+    padding-left: 8%;
+    
+}
+/* .third h5{
+    display: flex;
+    align-items: center;
+} */
+.third p{
+    font-size: 10px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.third .icone{
+    margin-left: 70%;
+    /* padding-bottom: 20%; */
+    position: relative;
+    bottom: 35px;
+
+}
+button{
+    width: 50%;
+    height: 30px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    margin-bottom: 5%;
+
+}
+.gridcontainer2{
+    display: grid;
+    grid-template-columns: repeat(2,90%);
+    margin: 10% 20%
+}
+.gridleft{
+    width: 70%;
+    /* border: 1px solid green; */
+    margin-left: -18%;
+    box-shadow: 5px 10px 5px var(--bluewhite);
+    
+}
+.gridleft .text span{
+    color: var(--blue);
+    font-weight: bold;
+}
+.contact1 p{
+ display: inline-block;  
+ margin: 1%;
+ color: var(--grey);
+
+}
+.contact2{
+    display: flex;
+    margin-left: 5%;
+}
+.contact2 .textcontact span{
+    color: var(--grey);
+}
+.contact2 .textcontact p{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 25px;
+}
+.contact2 i{
+    background-color: var(--blue);
+    width: 5%;
+    height: 20px;
+    /* display: block; */
+    /* padding: 10px 10px; */
+    margin: 2% 2%;
+    padding: 4%;
+    
+}
+
+.gridcontact{
+   margin-left: 3%;
+   color: var(--grey);
+}
+.gridright{
+    width: 60%;
+    /* border: 1px solid green; */
+    margin-left: -30%;
+    background-color: var(--blue)
+
+}
+.inputgroup{
+    margin-top: 3%;
+    margin-left: 20%;
+    /* align-items: center; */
+    width: 60%;
+}
+.inputgroup input{
+   width: 100%;
+   height: 40px;
+   background-color: var(--bluewhite);
+   color: var(--darkblue);
+   border: none;
+   margin-top: 4%;
+}
+.gridright button{
+    width: 102%;
+    /* margin-bottom: -5%; */
+    background-color: var(--darkblue);
+    color: var(--white);
+    margin-top: 1%;
+    height: 40px;
+}
+
+.inputgroup textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 4%;
+    background-color: var(--bluewhite);
+   color: var(--darkblue);
+}
+.scrol{
+    background-color: #06a3da;
+    width: 2%;
+    height: 30px;
+    padding-left: 1%;
+    padding-top: 8px;
+    position: relative;
+    margin-left: 92%;
+    top: 10%;
+}
+.sponsors1{
+  /* border: 1px solid green; */
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+
+}
+@media screen and (max-width: 1200px){
+   
+}
