@@ -5,6 +5,16 @@
     --bleuPlusClair : #EEF9FF;
     --gris:#ADB1C0;
 }
+html{  
+    /* pour gerer la lenteur */
+    scroll-behavior: smooth;
+    /* pour gerer le défilement vertical et spéciffier les arret */
+    scroll-snap-type: y mandatory;
+    /* pour que l'arret prends la section entière */
+    scroll-padding-top: 70px;
+    /* la transition */
+    transition: scroll-snap-align 3s ease-in-out;
+}
 /* *{
     border: 1px solid red;
 } */
@@ -71,6 +81,9 @@ header .menu {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--blanc);
+    /* position: fixed; */
+    z-index: 1;
+    width: 100%;
 }
 .fa-user-tie{
     margin-right: 10px;
@@ -111,7 +124,6 @@ header .menu .menuItems ul li a {
 
 }
 header .menu .menuItems ul li a i{
-    color: var(--orange);
     margin-left: 10px;
 
 }
@@ -131,6 +143,23 @@ header .menu .menuItems ul li button{
     position: relative;
     border-bottom: 1px solid var(--bleuclair);
 } */
+
+.submenu {
+    display: none!important;
+    background-color: aqua;
+    margin: 0 !important;
+}
+.submenu li a{
+    margin-left: -45px;
+    background-color: #06A3DA;
+
+
+}
+
+.has-submenu.active .submenu {
+    display: block !important;
+}
+
 /* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
 header .texte{
 margin: 10% auto;
@@ -433,7 +462,6 @@ main #section3 .prices .price:nth-child(2) , main .clients .client:nth-child(2) 
 .portfolios .ligne{
     display: grid;
     grid-template-columns: auto auto auto ;
-    z-index: 1;
     margin-bottom: 17px;
 
 }
@@ -506,6 +534,16 @@ main #section3 .prices .price:nth-child(2) , main .clients .client:nth-child(2) 
     width: 30%;
     position: relative;
     top: 30px;
+}
+
+.floting-btn a{
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    color: white;
+    background-color: var(--bleuclair);
+    padding: 8px 10px;
 }
 /* RESPONSIVITE */
 
