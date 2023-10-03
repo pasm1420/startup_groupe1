@@ -6,11 +6,28 @@
     --color: #f2fbff;
     --colo:#06A3DA;
 } 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+html{  
+    /* pour gerer la lenteur */
+    scroll-behavior: smooth;
+    /* pour gerer le défilement vertical et spéciffier les arret */
+    scroll-snap-type: y mandatory;
+    /* pour que l'arret prends la section entière */
+    scroll-padding-top: 70px;
+    /* la transition */
+    transition: scroll-snap-align 3s ease-in-out;
 }
+/* *{
+    border: 1px solid red;
+} */
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto ;
+    font-family: Verdana;
+    font-size: 14px;
+    padding: 0;
+ }
+
  /* -------------------------------HEADER------------------------------------------------------------ */
  header{
     background: linear-gradient(0deg, #04061bb0, #04061bb0), url("image/w.PNG");
@@ -116,6 +133,20 @@ header .menu .menuItems ul li button{
     color: white;
     border: none;
     margin-top: -10px;
+}
+.submenu {
+    display: none!important;
+    background-color: #06A3DA;
+    margin: 0 !important;
+}
+.submenu li a{
+    margin-left: -45px;
+
+
+}
+
+.has-submenu.active .submenu {
+    display: block !important;
 }
 /* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
 header .texte{
@@ -226,6 +257,13 @@ textarea{
     background-color: rgb(15, 119, 216);
     padding-bottom: 3px;
 }
+#search{
+    width: 95%;
+    padding: 2px;
+}
+.fa-solid {
+    padding: 2px; 
+}
 .dev i{
     margin-left: 5%;
     padding-bottom: 6px;
@@ -270,7 +308,6 @@ button{
     margin: 5%;
 }
 .boutique{
-    border: 1px solid #000;
     display: flex;
     justify-content: space-around;
     margin: 2%;

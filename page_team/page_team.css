@@ -145,7 +145,20 @@ header .menu .menuItems ul li button {
     border: none;
     margin-top: -10px;
 }
+.submenu {
+    display: none!important;
+    background-color: #06A3DA;
+    margin: 0 !important;
+}
+.submenu li a{
+    margin-left: -45px;
 
+
+}
+
+.has-submenu.active .submenu {
+    display: block !important;
+}
 /* ---------------------------DESIGN DU TEXTE DANS LE HEADER----------------------------- */
 
 header .texte {
